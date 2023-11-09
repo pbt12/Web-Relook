@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^6.2.0",
+    "mongoose": "^7.6.4"
+  },
+  "name": "relook1",
+  "version": "1.0.0",
+  "description": "'Node relook'",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon run server.js"
+  },
+  "author": "Bhanu Teja Pogiri",
+  "license": "ISC"
+}

@@ -1,0 +1,47 @@
+
+
+****** BASIC SKELETON OF A BACKEND SERVER WITH EXPRESS *******
+
+----------------  STEP - 1: INSTANTIATION -------------
+|```
+|
+| i.  Import the packages and modules using 'require(...)'
+| ii. Express App Instantiation using 'express()' [ const  app = express() ]
+|       - This creates an instance of the express application
+|       - When express is used, express app itself acts as server and handles all the logic
+|       - If express is used then we can simply use routes directly by importing them
+|       - If express is not used then we have to write code for handling all the input requests and routes etc.,
+| iii. Defining port on which our express server or http server works
+|___
+
+----------------  STEP - 2: ROUTING -------------
+|`
+| i. Now that the express app is instantized we have to specify the url routing the express application
+| ii. We have to specify the type of http method, we are going to use, and on what url we will be using that http method:
+|       - Express app ('app') is a class, and so comes with buch of methods  and properties, some such methods are : 
+|           - GET, PUT, POST
+|       - how do we specify : 
+|           - eg.: app.get(url-after-root-url , what_to_do-if_routed_to_this_url_with_this_method(get-here))
+|                    app.get('/', (request, response) => {
+|                        response.send("hello world!!")
+|                    });
+|           - Here 'app' is our express application, 'get' is the method that we called on 'app', and when the url-'/' is hit, then the
+|               function gets exectured, which takes (request, response) as arguments, and we can manipulate the response using the request
+|               This way we can route based on url's
+|_
+
+----------------  STEP - 3: LISTENING ON PORT -------------
+|`
+| i. Final step is to make this app listen on a port
+| ii. we do this using 'listen' method of the 'app' class, which takes 'port_number' as argument and an optional function (we may write or may not write the funtion upto us):
+|       - eg. : app.listen(port, () => {
+|                   console.log("Listening on port: "+port);
+|               });
+|_
+
+
+STEP - 1 & STEP - 3 are fixed format and codes (almost), 
+but STEP - 2's complexity will change between websites as different websites does different routing
+
+
+*/
